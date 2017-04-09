@@ -176,7 +176,8 @@ Spacer
 ============================= */
 
 #spacer1 {
-    background-image: url(../img/spacer/1.jpg);
+    background-image: url(../img/spacer/servers.jpg);
+    background-position-y: 50%;
 }
 
 #spacer2 {
