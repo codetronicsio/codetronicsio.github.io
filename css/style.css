@@ -181,7 +181,9 @@ Spacer
 }
 
 #spacer2 {
-    background-image: url(../img/spacer/2.jpg);
+    background-image: url(../img/spacer/coding.jpg);
+    background-position-y: 50%;
+    background-position-x: 30%;
 }
 
 /* ================================
