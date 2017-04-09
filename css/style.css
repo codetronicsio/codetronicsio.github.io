@@ -167,6 +167,10 @@ Home sections
     color: #eee;
 }
 
+.logo {
+    height: 40px;
+}
+
 /* ==========================
 Spacer
 ============================= */
@@ -186,8 +190,8 @@ Intro
 #intro {
     height: 635px;
     width: 100%;
-    background-color: #fe6213;
-    background-image: url(../img/sarasa.png);
+    background-color: #FDAD2A;
+    background-image: url(../img/laptop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -204,7 +208,7 @@ Intro
 }
 
 #intro .brand {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .intro-text h1 a {
@@ -629,7 +633,7 @@ more media queries
 
 @media (max-width: 768px) {
     #intro {
-        background-image: url(../img/sarasa.png);
+        background-image: url(../img/laptop.png);
         background-size: 100%;
     }
 
