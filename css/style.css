@@ -15,10 +15,20 @@ body {
     padding: 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6em;
 
 }
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #ffb700;
+}
+
 
 h1 {
     font-size: 36px;
@@ -126,6 +136,8 @@ Home sections
 /* --- heading --- */
 .section-heading {
     margin-bottom: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .section-heading h2 {
@@ -143,10 +155,20 @@ Home sections
     margin-bottom: 20px;
 }
 
+.special-p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffb700;
+}
+
 /* --- section bg var --- */
 
 .bg-white {
     background: #fff;
+}
+
+.bg-brand {
+    background: #ffb700;
 }
 
 .bg-gray {
@@ -168,7 +190,7 @@ Home sections
 }
 
 .logo {
-    height: 40px;
+  height: 128px;
 }
 
 /* ==========================
@@ -193,14 +215,16 @@ Intro
 #intro {
     height: 635px;
     width: 100%;
-    background-color: #FDAD2A;
-    background-image: url(../img/laptop.png);
-    background-position: center;
+    /*background-color: #FDAD2A; */
+    background-color: #f1f0f3;
+    background-image: url(../img/background.jpeg);
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 100%;
     overflow-y: hidden;
     text-align: center;
     position: relative;
+    padding: 10px;
 }
 
 .intro-text {
@@ -211,11 +235,12 @@ Intro
 }
 
 #intro .brand {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .intro-text h1 a {
-    color: #fff;
+    color: #000;
+    /*todo*/
     text-align: center;
     font-weight: 700;
     font-size: 40px;
@@ -233,11 +258,12 @@ Intro
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 25px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
 .intro-text p span {
-    color: #fff;
+    color: #000;
+    /*todo*/
     font-size: 24px;
     text-align: center;
     font-weight: 300;
@@ -319,17 +345,11 @@ Works
 ================================= */
 
 .clientLogo {
-    width: 150px;
-    height: 33px;
+    width: 200px;
+    /*height: 33px;*/
     box-shadow: 0px 0px 40px 10px white;
     border-radius: 50px;
-    filter: grayscale(1);
     margin-bottom: 15px;
-}
-
-.clientLogo:hover {
-    -webkit-filter: grayscale(0);
-    filter: none;
 }
 
 .lb-album {
