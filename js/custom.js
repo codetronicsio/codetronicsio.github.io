@@ -1,9 +1,11 @@
 (function($) {
-    $('#dl-menu').dlmenu();
-    $('ul.dl-menu li a').smoothScroll();
 
-
+    smoothScroll.init({
+    		speed: 700,
+			easing: 'easeOutQuint',
+    });
     //animation
     new WOW().init();
 
 })(jQuery);
+

@@ -22,6 +22,8 @@
               rel="stylesheet"
               media="screen">
         <script src="js/modernizr.custom.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+
     </head>
     <body>
       
@@ -40,11 +42,11 @@
           
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class=""><a href="#about">About Us <span class="sr-only">(current)</span></a></li>
-              <li class=""><a href="#services">Services <span class="sr-only">(current)</span></a></li>
-              <li class=""><a href="#works">Works <span class="sr-only">(current)</span></a></li>
-              <li class=""><a href="#contact">Contact <span class="sr-only">(current)</span></a></li>
-              
+              <li class=""><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll href="#about">About Us <span class="sr-only">(current)</span></a></li>
+              <li class=""><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll href="#services">Services <span class="sr-only">(current)</span></a></li>
+              <li class=""><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll href="#works">Works <span class="sr-only">(current)</span></a></li>
+              <li class=""><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll href="#team">Team <span class="sr-only">(current)</span></a></li>
+              <li class=""><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll href="#contact">Contact <span class="sr-only">(current)</span></a></li>   
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -157,7 +159,7 @@
             </div>
           </div>
           
-          <div class="row">
+          <div class="row wow fadeIn">
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
               <div class="service-box">
                 <a href="http://www.esolutions.com.ar/">
@@ -205,7 +207,7 @@
       </section>
 
       <!-- team -->
-      <section id="about" class="home-section bg-gray">
+      <section id="team" class="home-section bg-gray wow fadeIn">
         <div class="container">
           <div class="row">
             <div class="">
@@ -266,7 +268,7 @@
               </div>
             </div>
             
-            <div class="box-team">
+            <div class="box-team" >
               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                 <img src="img/team/vic2.jpeg" alt="" class="img-responsive"/>
               </div>
@@ -335,9 +337,15 @@
           
           <div class="row">
             <div class="col-md-offset-2 col-md-8">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div style="display:none;" id="email-invalid"></div>
+              <div style="display:none;" id="thankyou_message">
+                <h2>
+                  <em>Thanks!</em><br>
+                  Your message has been sent.
+                </h2>
+              </div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form id="gform" action="https://script.google.com/macros/s/AKfycbxYaiWl1pHHDM66jYstF0LFoT-S7DxLy5KiapvCc-YFWytnGaz5/exec" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text"
                   name="name"
@@ -379,44 +387,31 @@
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-theme btn-lg btn-block">Send Message</button>
+                  <div style="display: none;" id="spin">
+                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
 
-        <!-- 
+     
+        <!-- Social -->   
         <div class="row mar-top30 ">
           <div class="col-md-offset-2 col-md-8">
-            <h5>We're on social networks</h5>
+            <h5>We're on "social" networks</h5>
             <ul class="social-network">
-              <li><a href="#">
+              <li><a href="https://github.com/codetronicsio">
                 <span class="fa-stack fa-2x">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span></a>
-              </li>
-              <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-                </span></a>
-              </li>
-              <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span></a>
-              </li>
-              <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span></a>
               </li>
             </ul>
           </div>
         </div>
-        -->
+        
       </div>
     </section>
 
@@ -433,11 +428,8 @@
     <!-- js -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.smooth-scroll.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   </body>
 </html>
