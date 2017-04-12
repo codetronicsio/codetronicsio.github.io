@@ -124,13 +124,35 @@ margin, padding
     margin-top: 40px;
 }
 
+.mar-top60 {
+    margin-top: 60px;
+}
+
+.mar-bottom40 {
+  margin-bottom: 40px;
+}
+
+.hpadded{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pad-l {
+  padding-left: 15px;
+}
+
+.pad-r {
+  padding-right: 15px;
+}
+
+
 /* ================================
 Home sections
 ================================= */
 
 .home-section {
     width: 100%;
-    padding: 90px 0px 150px 0px;
+    padding: 75px 0px 100px 0px;
 }
 
 /* --- heading --- */
@@ -200,12 +222,14 @@ Spacer
 #spacer1 {
     background-image: url(../img/spacer/servers.jpg);
     background-position-y: 50%;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 #spacer2 {
-    background-image: url(../img/spacer/coding.jpg);
+    background-image: url(../img/spacer/studio.jpg);
     background-position-y: 50%;
-    background-position-x: 30%;
+    background-position-x: 60%;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 /* ================================
@@ -272,18 +296,43 @@ Intro
 /* ================================
 About
 ================================= */
+.box-team{
+  margin-bottom: 20px;
+  min-height: 248px;
+  border-radius: 10px;
+  /*background-color: #f8f8f8;*/
+}
+
 .box-team img {
-    border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+  border-radius: 10px;
+}
+
+.teammate {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teammate .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  flex-direction: row;
+  text-align: left;
+}
+
+.teammate .description {
+  text-align: justify;
 }
 
 /* ================================
 Services
 ================================= */
 
-.service-box p {
-    margin-bottom: 20px;
+.service-box {
+    margin-bottom: 40px;
 }
 
 .service.carousel h4, .service.carousel p {
