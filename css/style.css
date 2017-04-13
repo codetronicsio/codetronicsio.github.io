@@ -20,14 +20,13 @@ body {
 }
 
 .navbar {
-  margin-bottom: 0px;
-  border-radius: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
-.navbar-inverse .navbar-brand{
-  color: #FFAE00;
+.navbar-inverse .navbar-brand {
+    color: #FFAE00;
 }
-
 
 h1 {
     font-size: 36px;
@@ -128,22 +127,21 @@ margin, padding
 }
 
 .mar-bottom40 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
-.hpadded{
-  padding-left: 5px;
-  padding-right: 5px;
+.hpadded {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .pad-l {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
 .pad-r {
-  padding-right: 15px;
+    padding-right: 15px;
 }
-
 
 /* ================================
 Home sections
@@ -177,9 +175,9 @@ Home sections
 }
 
 .special-p {
-  font-size: 18px;
-  font-weight: bold;
-  color: #FFAE00;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFAE00;
 }
 
 /* --- section bg var --- */
@@ -211,7 +209,7 @@ Home sections
 }
 
 .logo {
-  height: 128px;
+    height: 128px;
 }
 
 /* ==========================
@@ -238,7 +236,7 @@ Intro
 #intro {
     height: 635px;
     width: 100%;
-    /*background-color: #FDAD2A; */
+    /*background-color: #FFA400; */
     background-color: #f1f0f3;
     background-image: url(../img/background.jpeg);
     background-position: left;
@@ -258,7 +256,7 @@ Intro
 }
 
 #intro .brand {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 .intro-text h1 a {
@@ -295,35 +293,35 @@ Intro
 /* ================================
 About
 ================================= */
-.box-team{
-  margin-bottom: 20px;
-  min-height: 248px;
-  border-radius: 10px;
-  /*background-color: #f8f8f8;*/
+.box-team {
+    margin-bottom: 20px;
+    min-height: 248px;
+    border-radius: 10px;
+    /*background-color: #f8f8f8;*/
 }
 
 .box-team img {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 .teammate {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .teammate .title {
-  font-weight: bold;
-  font-size: 1.2em;
-  flex-direction: row;
-  text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    flex-direction: row;
+    text-align: left;
 }
 
 .teammate .description {
-  text-align: justify;
+    text-align: justify;
 }
 
 /* ================================
@@ -717,7 +715,6 @@ more media queries
 
 @media (max-width: 768px) {
     #intro {
-        background-image: url(../img/laptop.png);
         background-size: 100%;
     }
 
