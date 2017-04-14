@@ -391,6 +391,7 @@ Works
 
 .clientLogo {
     margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .lb-album {
@@ -758,6 +759,6 @@ more media queries
 
 @media (min-width: 768px) {
     #bs-example-navbar-collapse-1 {
-       padding: 0 15px;
+        padding: 0 15px;
     }
 }
