@@ -2,9 +2,9 @@
 Imports
 ================================= */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
-@import url('font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('overwrite.css');
-@import url('animate.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
 /* ================================
 General
@@ -753,5 +753,11 @@ more media queries
     .section-heading h2 {
         font-size: 24px;
         text-transform: uppercase;
+    }
+}
+
+@media (min-width: 768px) {
+    #bs-example-navbar-collapse-1 {
+       padding: 0 15px;
     }
 }
