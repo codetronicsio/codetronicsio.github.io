@@ -262,7 +262,7 @@
                     </div>
                 </div>
 
-                <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class = "sort-team col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                     <div class = "box-team">
                         <div class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
@@ -518,4 +518,24 @@
                 type = "text/javascript"
                 src = "js/form-submission-handler.js"></script>
     </body>
+
+    <script>
+        reorder();
+
+        function reorder() {
+            var grp = $(".sort-team").children();
+            var cnt = grp.length;
+
+            var temp, x;
+            for (var i = 0; i < cnt; i++) {
+                temp = grp[i];
+                x = Math.floor(Math.random() * cnt);
+                grp[i] = grp[x];
+                grp[x] = temp;
+            }
+            $(grp).remove();
+            $(".sort-team").append($(grp));
+        }
+
+    </script>
 </html>
