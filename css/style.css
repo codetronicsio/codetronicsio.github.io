@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.social-icons-text-color {
+    color: #3a3a3a;
+}
+
 .lead {
     font-weight: 400;
 }
