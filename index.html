@@ -52,6 +52,7 @@
 
                 <div class = "navbar-header">
                     <button type = "button"
+                            id = "menu-button"
                             class = "navbar-toggle collapsed"
                             data-toggle = "collapse"
                             data-target = "#bs-example-navbar-collapse-1"
@@ -69,25 +70,25 @@
                 <div class = "collapse navbar-collapse"
                      id = "bs-example-navbar-collapse-1">
                     <ul class = "nav navbar-nav navbar-right">
-                        <li class = ""><a data-toggle = "collapse"
-                                          data-target = ".navbar-collapse"
+                        <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
+                                          onclick = 'collapseMenu()'
                                           href = "#about">About Us <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-toggle = "collapse"
-                                          data-target = ".navbar-collapse"
+                        <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
+                                          onclick = 'collapseMenu()'
                                           href = "#services">Services <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-toggle = "collapse"
-                                          data-target = ".navbar-collapse"
+                        <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
+                                          onclick = 'collapseMenu()'
                                           href = "#works">Works <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-toggle = "collapse"
-                                          data-target = ".navbar-collapse"
+                        <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
+                                          onclick = 'collapseMenu()'
                                           href = "#team">Team <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-toggle = "collapse"
-                                          data-target = ".navbar-collapse"
+                        <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
+                                          onclick = 'collapseMenu()'
                                           href = "#contact">Contact <span class = "sr-only">(current)</span></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -552,6 +553,12 @@
             }
             $(grp).remove();
             $(".sort-team").append($(grp));
+        }
+
+        function collapseMenu() {
+            if ($('#menu-button').is(':visible')) {
+                $('#bs-example-navbar-collapse-1').collapse('toggle');
+            }
         }
     </script>
 </html>
