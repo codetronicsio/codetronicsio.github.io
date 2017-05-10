@@ -73,23 +73,25 @@
                         <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
                                           onclick = 'collapseMenu()'
-                                          href = "#about">About Us <span class = "sr-only">(current)</span></a></li>
+                                          href = "#about"><div data-t>About Us // Sobre Nosotros </div><span class = "sr-only">(current)</span></a></li>
                         <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
                                           onclick = 'collapseMenu()'
-                                          href = "#services">Services <span class = "sr-only">(current)</span></a></li>
+                                          href = "#services"><div data-t>Services // Servicios</div><span class = "sr-only">(current)</span></a></li>
                         <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
                                           onclick = 'collapseMenu()'
-                                          href = "#works">Works <span class = "sr-only">(current)</span></a></li>
+                                          href = "#works"><div data-t>Works // Trabajos </div><span class = "sr-only">(current)</span></a></li>
                         <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
                                           onclick = 'collapseMenu()'
-                                          href = "#team">Team <span class = "sr-only">(current)</span></a></li>
+                                          href = "#team"><div data-t>Team // Equipo</div><span class = "sr-only">(current)</span></a></li>
                         <li class = ""><a data-target = ".navbar-collapse"
                                           data-scroll
                                           onclick = 'collapseMenu()'
-                                          href = "#contact">Contact <span class = "sr-only">(current)</span></a></li>
+                                          href = "#contact"><div data-t>Contact // Contacto</div><span class = "sr-only">(current)</span></a></li>
+                        <li class = ""><a data-target = ".navbar-collapse" onclick = 'collapseMenu()'><div id="en-btn">EN</div></a></li>
+                        <li class = ""><a data-target = ".navbar-collapse" onclick = 'collapseMenu()'><div id="es-btn">ES</div></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -108,8 +110,8 @@
                             <div class = "brand">
                                 <h1><a href = "index.html">Codetronics</a></h1>
                                 <div class = "line-spacer"></div>
-                                <p><span>technology lovers</span></p>
-                                <p><span>solutions creators</span></p>
+                                <p><span data-t>technology lovers // amantes de la tecnolog&iacute;a</span></p>
+                                <p><span data-t>solutions creators // creadores de soluciones</span></p>
                             </div>
                         </div>
                     </div>
@@ -124,10 +126,11 @@
                     <div class = "">
                         <div class = "section-heading">
                             <h2>About Us</h2>
-                            <p class = "lead">We love software</p>
-                            <p class = "lead">We enjoy playing and working with it</p>
-                            <p class = "lead">We're a team of goal driven people ready to power your
-                                              business with software seamlessly</p>
+                            <p class = "lead" data-t>We love software // amamos el software</p>
+                            <p class = "lead" data-t>We enjoy playing and working with it // Disfrutamos jugar y trabajar con &eacute;l</p>
+                            <p class = "lead" data-t>We're a team of goal driven people ready to power your
+                                              business with software seamlessly // Somos un equipo de gente guida por resultados y listos
+                                              para encaminar tu negocio</p>
                         </div>
                     </div>
                 </div>
@@ -543,13 +546,15 @@
 
         <!-- js -->
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
                 crossorigin = "anonymous"></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script src = "js/custom.js"></script>
         <script data-cfasync = "false"
                 type = "text/javascript"
                 src = "js/form-submission-handler.js"></script>
+          <script src = "js/dom-i18n.min.js"></script>
+
     </body>
 
     <script>
@@ -575,5 +580,27 @@
                 $('#bs-example-navbar-collapse-1').collapse('toggle');
             }
         }
+
+        var i18n = window.domI18n({
+          selector: '[data-t]',
+          separator: ' // ',
+          languages: ['en-US', 'es'],
+          defaultLanguage: 'en-US'
+        });
+
+        var enButton = document.getElementById('en-btn');
+        var esButton = document.getElementById('es-btn');
+
+        i18n.changeLanguage('en-US');
+
+        enButton.onclick = function () {
+          i18n.changeLanguage('en-US');
+        };
+        esButton.onclick = function () {
+          i18n.changeLanguage('es');
+        };
+
+        document.body.style.display = 'block';
+
     </script>
 </html>
