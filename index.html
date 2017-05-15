@@ -146,8 +146,8 @@
                         <div class = "color-light">
                             <h3>We create full-range technology solutions to expand your business or ignite new
                                 ones</h3>
-                            <p class = "lead">We could enlarge your team or develop your vision from
-                                              scratch</p>
+                            <p class = "lead">We develop your vision from
+                                              scratch or expand your team capabilities</p>
                         </div>
                     </div>
                 </div>
@@ -505,42 +505,61 @@
 
 
                 <!-- Social -->
-                <div class = "row mar-top30 ">
-                    <div class = "col-md-offset-2 col-md-8">
-                        <h5>Stay in touch...</h5>
-                        <ul class = "social-network">
-                            <li><a href = "https://www.linkedin.com/company-beta/16247820/">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-linkedin fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                            </li>
-                            <li><a href = "https://github.com/codetronicsio">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-github fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                            </li>
-                            <li><a href = "https://www.instagram.com/codetronics/">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-instagram fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+            </div>
 
             </div>
         </section>
 
         <footer>
             <div class = "container">
-                <div class = "row">
-                    <div class = "col-md-12">
-                        <p>Codetronics 2017</p>
+                <div class = "row wow fadeIn">
+                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
+                        <div>
+                            <div>
+                                <ul class = "social-network">
+                                    <li><a href = "https://www.linkedin.com/company-beta/16247820/">
+                <span class = "fa-stack fa-2x">
+                  <i class = "fa fa-circle fa-stack-2x"></i>
+                  <i class = "fa fa-linkedin fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                                    </li>
+                                    <li><a href = "https://github.com/codetronicsio">
+                <span class = "fa-stack fa-2x">
+                  <i class = "fa fa-circle fa-stack-2x"></i>
+                  <i class = "fa fa-github fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                                    </li>
+                                    <li><a href = "https://www.instagram.com/codetronics/">
+                <span class = "fa-stack fa-2x">
+                  <i class = "fa fa-circle fa-stack-2x"></i>
+                  <i class = "fa fa-instagram fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p></p>
+                                <p>Nazaret 3176 #15</p>
+                                <p>Córdoba - Argentina</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
+                        <div class = "service-box">
+                            <div class = "map"
+                                 id = "map">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <p>Codetronics 2017</p>
+
             </div>
         </footer>
 
@@ -564,6 +583,7 @@
             var grp = $(".sort-team").children();
             var cnt = grp.length;
 
+
             var temp, x;
             for (var i = 0; i < cnt; i++) {
                 temp = grp[i];
@@ -580,6 +600,7 @@
                 $('#bs-example-navbar-collapse-1').collapse('toggle');
             }
         }
+
 
         var i18n = window.domI18n({
           selector: '[data-t]',
@@ -601,6 +622,289 @@
         };
 
         document.body.style.display = 'block';
+
+        function initMap() {
+            var codetronics = {lng: -64.2254871, lat: -31.3917074};
+            var center = {lng: -64.196234, lat: -31.410942};
+            var styledMapType = new google.maps.StyledMapType(
+                    [
+                        {
+                            "featureType": "all",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "all",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": 36
+                                },
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 40
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "all",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "all",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.locality",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#c4c4c4"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.neighborhood",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#707070"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 21
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.business",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#be2026"
+                                },
+                                {
+                                    "lightness": "0"
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                },
+                                {
+                                    "hue": "#ff000a"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 18
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#FFAE00"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#2c2c2c"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#999999"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "saturation": "-52"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 19
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#2B2B2B"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        }
+                    ],
+                    {name: 'Styled Map'});
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: codetronics,
+                mapTypeControlOptions: {
+                    mapTypeIds: []
+                }
+            });
+
+            map.mapTypes.set('styled_map', styledMapType);
+            map.setMapTypeId('styled_map');
+            var marker = new google.maps.Marker({
+                position: codetronics,
+                map: map
+            });
+        }
+
+    </script>
+    <script async
+            defer
+            src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDTmEEuplu7PLULgmztPBemcouftA3il6I&callback=initMap">
 
     </script>
 </html>

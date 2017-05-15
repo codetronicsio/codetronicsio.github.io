@@ -766,3 +766,9 @@ more media queries
         padding: 0 15px;
     }
 }
+
+.map {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
