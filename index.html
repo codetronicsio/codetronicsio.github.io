@@ -159,6 +159,7 @@
             </div>
         </section>
 
+
         <!-- spacer -->
         <section id = "spacer1"
                  class = "home-section spacer">
@@ -178,6 +179,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Services -->
         <section id = "services"
@@ -292,9 +294,38 @@
 
             <a href = "./Dossier/Codetronics_Dossier_English_Espanol.pdf"
                class = "btn btn-warning btn-sm"
+               style = "margin-bottom: 50px"
                role = "button"
                data-t>Download projects details // Descargar detalles de proyectos</a>
 
+
+            <div class = "row">
+                <div class = "col-md-offset-2 col-md-8">
+
+
+                    <h4 data-t>The technologies we use // Las tecnolog&iacute;as que usamos</h4>
+                </div>
+            </div>
+
+
+            <div class = "container">
+                <section class = "customer-logos slider">
+                    <div class = "slide"><img src = "./img/techs/angular.png"></div>
+                    <div class = "slide"><img src = "./img/techs/mongo.png"></div>
+                    <div class = "slide"><img src = "./img/techs/aws.png"></div>
+                    <div class = "slide"><img src = "./img/techs/docker.png"></div>
+                    <div class = "slide"><img src = "./img/techs/react.png"></div>
+                    <div class = "slide"><img src = "./img/techs/python.png"></div>
+                    <div class = "slide"><img src = "./img/techs/node.png"></div>
+                    <div class = "slide"><img src = "./img/techs/go.png"></div>
+                    <div class = "slide"><img src = "./img/techs/ionic.png"></div>
+                    <div class = "slide"><img src = "./img/techs/java.png"></div>
+                    <div class = "slide"><img src = "./img/techs/kubernetes.png"></div>
+                    <div class = "slide"><img src = "./img/techs/linux.png"></div>
+                    <div class = "slide"><img src = "./img/techs/os.png"></div>
+                    <div class = "slide"><img src = "./img/techs/html.png"></div>
+                </section>
+            </div>
 
         </section>
 
@@ -644,6 +675,8 @@
                 type = "text/javascript"
                 src = "js/form-submission-handler.js"></script>
         <script src = "js/dom-i18n.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 
     </body>
 
@@ -983,4 +1016,41 @@
             src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDTmEEuplu7PLULgmztPBemcouftA3il6I&callback=initMap">
 
     </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 700,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                }, {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+    </script>
+
+
 </html>
