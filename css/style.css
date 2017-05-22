@@ -221,7 +221,7 @@ Spacer
 ============================= */
 
 #spacer1 {
-    background-image: url(../img/spacer/servers.jpg);
+    background-image: url(../img/spacer/chip.jpg);
     background-position-y: 50%;
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
