@@ -1,1063 +1,1244 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Codetronics</title>
-        <link rel = "shortcut icon"
-              type = "image/png"
-              href = "img/logo.png" />
-        <link rel = "shortcut icon"
-              type = "image/png"
-              href = "img/logo.png" />
-        <meta charset = "utf-8" />
-        <meta content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-              name = "viewport">
-        <!-- css -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel = "stylesheet"
-              href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-              integrity = "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-              crossorigin = "anonymous"
-              media = "screen">
-        <link href = "css/style.css"
-              rel = "stylesheet"
-              media = "screen">
-        <link href = "color/default.css"
-              rel = "stylesheet"
-              media = "screen">
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script src = "js/smooth-scroll.min.js"></script>
+<head>
+    <title>Codetronics</title>
+    <link rel="shortcut icon"
+          type="image/png"
+          href="img/logo.png"/>
+    <link rel="shortcut icon"
+          type="image/png"
+          href="img/logo.png"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          name="viewport">
+    <!-- css -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous"
+          media="screen">
+    <link href="css/style.css"
+          rel="stylesheet"
+          media="screen">
+    <link href="color/default.css"
+          rel="stylesheet"
+          media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
 
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-97468758-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+        ga('create', 'UA-97468758-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-    </head>
-    <body>
+</head>
+<body>
 
-        <nav class = "navbar navbar-inverse navbar-fixed-top">
-            <div class = "container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
 
-                <div class = "navbar-header">
-                    <button type = "button"
-                            id = "menu-button"
-                            class = "navbar-toggle collapsed"
-                            data-toggle = "collapse"
-                            data-target = "#bs-example-navbar-collapse-1"
-                            aria-expanded = "false">
-                        <span class = "sr-only">Toggle navigation</span>
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                    </button>
-                    <a class = "navbar-brand"
-                       data-scroll
-                       href = "#">CODETRONICS</a>
-                </div>
+        <div class="navbar-header">
+            <button type="button"
+                    id="menu-button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <div class = "collapse navbar-collapse"
-                     id = "bs-example-navbar-collapse-1">
-                    <ul class = "nav navbar-nav navbar-right">
-                        <li class = ""><a data-target = ".navbar-collapse"
-                                          data-scroll
-                                          onclick = 'collapseMenu()'
-                                          href = "#about">
-                            <div data-t>About Us // Sobre Nosotros</div>
-                            <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-target = ".navbar-collapse"
-                                          data-scroll
-                                          onclick = 'collapseMenu()'
-                                          href = "#services">
-                            <div data-t>Services // Servicios</div>
-                            <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-target = ".navbar-collapse"
-                                          data-scroll
-                                          onclick = 'collapseMenu()'
-                                          href = "#clients">
-                            <div data-t> Works // Trabajos</div>
-                            <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-target = ".navbar-collapse"
-                                          data-scroll
-                                          onclick = 'collapseMenu()'
-                                          href = "#team">
-                            <div data-t>Team // Equipo</div>
-                            <span class = "sr-only">(current)</span></a></li>
-                        <li class = ""><a data-target = ".navbar-collapse"
-                                          data-scroll
-                                          onclick = 'collapseMenu()'
-                                          href = "#contact">
-                            <div data-t>Contact // Contacto</div>
-                            <span class = "sr-only">(current)</span></a></li>
-                        <li class = "">
-                            <a data-target = ".navbar-collapse"
-                               onclick = 'collapseMenu()'
-                               style = "font-size: 10px; cursor: pointer; cursor: hand;">
-                                <span id = "en-btn">ENGLISH</span>|<span id = "es-btn">ESPA&Ntilde;OL</span>
-                            </a>
-                        </li>
+            <a class="navbar-brand"
+               data-scroll
+               href="#">
+                CODETRONICS</a>
+        </div>
 
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+        <div class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
+            <ul class="navbar nav navbar-nav navbar-right">
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#about">
+                    <div data-t>About Us // Nosotros</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#services">
+                    <div data-t>Services // Servicios</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#technologies">
+                    <div data-t>Tools // Herramientas</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#works">
+                    <div data-t> Works // Trabajos Realizados</div>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#clients">
+                    <div data-t> Clients // Clientes</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <span class="sr-only">(current)</span></a></li>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#team">
+                    <div data-t>Team // Equipo</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <li class=""><a class="nav-header-buttons" data-target=".navbar-collapse"
+                                data-scroll
+                                onclick='collapseMenu()'
+                                href="#contact">
+                    <div data-t>Contact // Contacto</div>
+                    <span class="sr-only">(current)</span></a></li>
+                <li>
+                    <a class="nav-header-buttons" data-target=".navbar-collapse"
+                       onclick='collapseMenu()'
+                       style="font-size: 8px; cursor: pointer; cursor: hand;">
+                        <span id="en-btn">ENGLISH</span>|<span id="es-btn">ESPA&Ntilde;OL</span>
+                    </a>
+                </li>
 
-        <!-- intro area -->
-        <div id = "intro">
-            <div class = "intro-text">
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
-                            <div class = "brand">
-                                <img class = "logo"
-                                     src = "img/logo.png" />
-                            </div>
-                            <div class = "brand">
-                                <h1><a href = "index.html">Codetronics</a></h1>
-                                <div class = "line-spacer"></div>
-                                <p><span data-t>technology lovers // amantes de la tecnolog&iacute;a</span></p>
-                                <p><span data-t>solutions creators // creadores de soluciones</span></p>
-                            </div>
-                        </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!------------------------- Intro ------------------------->
+<div id="intro">
+    <div class="intro-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
+                    <div class="brand">
+                        <img class="logo"
+                             src="img/logo.png"/>
+                    </div>
+                    <div class="brand">
+                        <h1><a href="index.html">Codetronics</a></h1>
+                        <div class="line-spacer"></div>
+                        <p><span data-t>technology lovers // amantes de la tecnolog&iacute;a</span></p>
+                        <p><span data-t>solutions creators // creadores de soluciones</span></p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <section id = "about"
-                 class = "home-section bg-brand">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "">
-                        <div class = "section-heading">
-                            <h2 data-t>About Us // Sobre Nosotros</h2>
-                            <p class = "lead"
-                               data-t>We love software // Amamos el software</p>
-                            <p class = "lead"
-                               data-t>We enjoy working and playing with it // Nos entusiasma trabajar
-                                      con &eacute;l</p>
-                            <p class = "lead"
-                               data-t>We're a team of goal driven engineers ready to power your
-                                      business with software seamlessly // Somos un equipo de profesionales
-                                      especializados, experimentados y eficientes en obtener positivos resultados y
-                                      listos para potenciar su negocio con la tecnolog&iacute;a</p>
-                            <p class = "lead"
-                               data-t>We offer our knowledge to help on achieving your business objectives, complement
-                                      teams,
-                                      develop new projects and find solutions // Ofrecemos nuestros conocimientos para
-                                      ayudar
-                                      a
-                                      concretar objetivos de negocio, complementar equipos, desarrollar nuevos proyectos
-                                      y buscar soluciones</p>
-                        </div>
-                    </div>
+<!------------------------- About ------------------------->
+<section id="about"
+         class="home-section bg-brand">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="section-heading">
+                    <h2 data-t>About Us // Sobre Nosotros</h2>
+                    <p class="lead"
+                       data-t>We love software // Amamos el software</p>
+                    <p class="lead"
+                       data-t>We enjoy working and playing with it // Nos entusiasma trabajar
+                        con &eacute;l</p>
+                    <p class="lead"
+                       data-t>We're a team of goal driven engineers ready to power your
+                        business with software seamlessly // Somos un equipo de profesionales
+                        especializados, experimentados y eficientes en obtener positivos resultados y
+                        listos para potenciar su negocio con la tecnolog&iacute;a</p>
+                    <p class="lead"
+                       data-t>We offer our knowledge to help on achieving your business objectives, complement
+                        teams,
+                        develop new projects and find solutions // Ofrecemos nuestros conocimientos para
+                        ayudar
+                        a
+                        concretar objetivos de negocio, complementar equipos, desarrollar nuevos proyectos
+                        y buscar soluciones</p>
                 </div>
             </div>
-        </section>
+        </div>
 
+    </div>
+</section>
 
-        <!-- spacer -->
-        <section id = "spacer1"
-                 class = "home-section spacer">
-            <div class = "container mar-top40 mar-bottom40">
-                <div class = "row">
-                    <div class = "col-md-12">
-                        <div class = "color-light">
-                            <h3 data-t>We create full-range technology solutions to expand your business or ignite new
-                                       ones // Creamos un amplio rango de recursos tecnol&oacute;gicos para expandir su
-                                       negocio
-                                       o para que genere nuevas oportunidades de crecimiento</h3>
-                            <h3 data-t>From hardware electronics to software user interfaces // Desde la electr&oacute;nica
-                                       del
-                                       hardware hasta las interfaces de usuario </h3>
-                            <p class = "lead"
-                               data-t>We develop your vision from scratch // Desarrollamos su visi&oacute;n desde
-                                      cero </p>
-
-                        </div>
-                    </div>
+<!------------------------- Services ------------------------->
+<section id="services"
+         class="home-section bg-dark">
+    <div class="container color-light">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="section-heading">
+                    <h2 data-t>Services we provide // Servicios</h2>
+                    <p></p>
                 </div>
             </div>
-        </section>
-
-
-        <!-- Services -->
-        <section id = "services"
-                 class = "home-section bg-brand">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-md-offset-2 col-md-8">
-                        <div class = "section-heading">
-                            <h2 data-t>Services we provide // Servicios</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <i class = "fa fa-code fa-4x"></i>
-                            <h4 data-t>Custom software, ready to use // Software personalizado, listo para usar</h4>
-                            <p data-t>From requirements definition and implementation to testing and deployment,
-                                      we can transform your ideas into products // Desde definici&oacute;n de
-                                      requerimientos e implementaci&oacute;n hasta casos de prueba y puesta en
-                                      marcha</p>
-                        </div>
-                    </div>
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <i class = "fa fa-tablet fa-4x"></i><i class = "hpadded fa fa-desktop fa-4x"></i><i class = "fa fa-mobile fa-4x"></i>
-                            <h4 data-t>Connect with your clients, everywhere // Conectate con tus clientes donde
-                                       sea</h4>
-                            <p data-t>We can expand your business with multi-platform apps,
-                                      reaching a wider audience // Podemos expandir su negocio con aplicaciones
-                                      multi-plataforma alcanzando una mayor audiencia</p>
-                        </div>
-                    </div>
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <i class = "fa fa-gears fa-4x"></i>
-                            <h4 data-t>Develop new tools
-                                       for your company // Desarrollamos nuevas herramientas para su empresa</h4>
-                            <p data-t>We work closely to you to build that tool you need, and
-                                      integrate it
-                                      into your
-                                      existing environment // Trabajamos junto a uster para construir la herramienta que
-                                      necesita e integrarla con sus procesos existentes</p>
-                        </div>
-                    </div>
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <i class = "fa fa-bolt fa-4x"></i>
-                            <h4 data-t>Power-up your local team // Reforzamos su equipo actual</h4>
-                            <p data-t>We can add experience and skill to your team, to give you the extra edge you need
-                                      // Podemos agregar experiencia y nuevas habilidades a su equipo para darte el
-                                      impulso extra que necesitas</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <i class="color-dark fa fa-code fa-4x"></i>
+                    <h4 data-t>Custom software, ready to use // Software personalizado, listo para
+                        usar</h4>
+                    <p data-t>From requirements definition and implementation to testing and deployment,
+                        we can transform your ideas into products // Desde definici&oacute;n de
+                        requerimientos e implementaci&oacute;n hasta casos de prueba y puesta en
+                        marcha</p>
                 </div>
             </div>
-        </section>
-
-        <section id = "clients"
-                 class = "home-section">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-md-offset-2 col-md-8">
-                        <div class = "section-heading">
-                            <h2 data-t>These companies have trusted in our work // Estas empresas han
-                                       confiado en nuestro trabajo</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class = "row wow fadeIn">
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <a href = "http://www.esolutions.com.ar/">
-                                <img class = "clientLogo"
-                                     src = "img/works/thumbs/eSolutions.jpg"
-                                     alt = "">
-                            </a>
-                        </div>
-                    </div>
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <a href = "http://www.ekumenlabs.com/">
-                                <img class = "clientLogo"
-                                     src = "img/works/thumbs/ekumen.jpg"
-                                     alt = "">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <a href = "">
-                                <img class = "clientLogo"
-                                     src = "img/works/thumbs/escom.jpg"
-                                     alt = "">
-                            </a>
-                        </div>
-                    </div>
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
-                        <div class = "service-box">
-                            <a href = "https://www.lammovil.com/">
-                                <img class = "clientLogo"
-                                     src = "img/works/thumbs/lammovil.jpg"
-                                     alt = "">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col-md-offset-2 col-md-8">
-
-
-                        <h4 data-t>The technologies we use // Las tecnolog&iacute;as que usamos</h4>
-                    </div>
-                </div>
-
-
-                <div class = "row">
-                    <section class = "customer-logos slider">
-                        <div class = "slide"><img src = "./img/techs/angular.png"></div>
-                        <div class = "slide"><img src = "./img/techs/mongo.png"></div>
-                        <div class = "slide"><img src = "./img/techs/aws.png"></div>
-                        <div class = "slide"><img src = "./img/techs/docker.png"></div>
-                        <div class = "slide"><img src = "./img/techs/react.png"></div>
-                        <div class = "slide"><img src = "./img/techs/python.png"></div>
-                        <div class = "slide"><img src = "./img/techs/node.png"></div>
-                        <div class = "slide"><img src = "./img/techs/go.png"></div>
-                        <div class = "slide"><img src = "./img/techs/ionic.png"></div>
-                        <div class = "slide"><img src = "./img/techs/java.png"></div>
-                        <div class = "slide"><img src = "./img/techs/kubernetes.png"></div>
-                        <div class = "slide"><img src = "./img/techs/linux.png"></div>
-                        <div class = "slide"><img src = "./img/techs/os.png"></div>
-                        <div class = "slide"><img src = "./img/techs/html.png"></div>
-                        <div class = "slide"><img src = "./img/techs/wp.png"></div>
-                        <div class = "slide"><img src = "./img/techs/ffmpeg.png"></div>
-                    </section>
-                </div>
-
-                <a href = "./Dossier/Codetronics_Dossier_English_Espanol.pdf"
-                   class = "btn btn-warning btn-sm"
-                   style = "margin-top: 50px"
-                   role = "button"
-                   data-t>Download projects details // Descargar detalles de proyectos</a>
-            </div>
-
-
-        </section>
-
-        <!-- spacer 2 -->
-        <section id = "spacer2"
-                 class = "home-section spacer">
-            <div class = "container mar-top40 mar-bottom40">
-                <div class = "row">
-                    <div class = "col-md-12">
-                        <div class = "color-light">
-                            <h2 data-t>Working software is our principal measurement of progress // El software
-                                       funcionando
-                                       es nuestra medida de progreso</h2>
-                            <p class = "lead"
-                               data-t>We deliver early and continuously valuable software // Entrega temprana y continua
-                                      de software que agregue valor</p>
-                        </div>
-                    </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <i class="color-dark fa fa-tablet fa-4x"></i><i
+                        class="color-dark hpadded fa fa-desktop fa-4x"></i><i
+                        class="color-dark fa fa-mobile fa-4x"></i>
+                    <h4 data-t>Connect with your clients, everywhere // Conectate con tus clientes donde
+                        sea</h4>
+                    <p data-t>We can expand your business with multi-platform apps,
+                        reaching a wider audience // Podemos expandir su negocio con aplicaciones
+                        multi-plataforma alcanzando una mayor audiencia</p>
                 </div>
             </div>
-        </section>
-
-        <!-- team -->
-        <section id = "team"
-                 class = "home-section bg-gray wow fadeIn">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "">
-                        <div class = "section-heading">
-                            <h2 data-t>Meet the core team // Conozca al equipo principal</h2>
-                            <!-- <p class="special-p">We're a team of goal driven people that want you to ignite and power your business with software seamlessly</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "sort-team col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                    <div class = "box-team">
-                        <div class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                            <img src = "img/team/luis.jpeg"
-                                 alt = ""
-                                 class = "img-responsive" />
-                        </div>
-                        <div class = "col-xs-12 col-sm-8 col-md-8 col-lg-9">
-                            <div class = "teammate pad-l">
-                                <div class = "title">
-                                    <span class = "title">Luis Bosch</span>
-                                    <a href = "https://www.linkedin.com/in/luis-bosch-3a60b31a/">
-                      <span class = "fa-stack fa-md pull-right">
-                        <i class = "fa fa-square fa-stack-2x"></i>
-                        <i class = "fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                                    </a>
-                                </div>
-                                <div class = "description">
-                                    <p data-t>
-                                        Luis is an Electronics Engineer from the Catholic University of Cordoba (UCC),
-                                        graduated in 2009. He's always had a knack for computers, which led him to get
-                                        involved in projects involving technology, both hardware and software,
-                                        and choose the path that he did.
-                                        His latest projects have involved full stack development of web applications for
-                                        real-time data processing. In his free time, he enjoys practicing and teaching
-                                        Taekwon-Do and jamming with his metal band // Luis es Ingeniero Electr&oacute;nico
-                                        graduado en la Universidad Cat&oacute;lica de C&oacute;rdoba. Siempre ha tenido
-                                        intuici&oacute;n
-                                        natural y habilidad para las computadoras, siempre se ha involucrado en
-                                        proyectos relacionados con la tecnolog&iacute;a, tanto de hardware como de
-                                        software.
-                                        Sus &uacute;ltimos proyectos fueron aplicaciones web para el procesamiento de
-                                        datos en
-                                        tiempo real. En su tiempo libre, le gusta practicar y ense&ntilde;ar Taekwon-Do
-                                        y tocar
-                                        con su banda de metal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "box-team">
-                        <div class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                            <img src = "img/team/san.jpeg"
-                                 alt = ""
-                                 class = "img-responsive" />
-                        </div>
-                        <div class = "col-xs-12 col-sm-8 col-md-8 col-lg-9">
-                            <div class = "teammate pad-l">
-                                <div class = "title">
-                                    <span class = "title">Santiago Avalos</span>
-                                </div>
-                                <div class = "description">
-                                    <p data-t>
-                                        Santiago discovered programming while making small computer games with some of
-                                        his
-                                        high-school friends. He graduated from the National University of Cordoba,
-                                        with a CS major degree, specializing on IA research.
-                                        He started working on local start-ups as Game Designer and C++ Developer,
-                                        before moving to Codetronics, where he focuses on web and hybrid mobile
-                                        applications // Santiago descubri&oacute; la programaci&oacute;n mientras hac&iacute;a
-                                        juegos de
-                                        computadora con sus amigos de la secundaria. Se gradu&oacute; de la Universidad
-                                        Nacional de C&oacute;rdoba, con un t&iacute;tulo de Licenciado en Ciencias de la
-                                        Computaci&oacute;n,
-                                        especializado en investigaci&oacute;n de IA. Comenz&oacute; a trabajar en
-                                        startups locales
-                                        como Game Designer y programador C++ antes de trasladarse a Codetronics, donde
-                                        se focaliza en el desarrollo de aplicaciones m&oacute;viles h&iacute;bridas.
-                                        Adem&aacute;s de la
-                                        programaci&oacute;n, la m&uacute;sica es su pasi&oacute;n
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "box-team">
-                        <div class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                            <img src = "img/team/vic.jpeg"
-                                 alt = ""
-                                 class = "img-responsive" />
-                        </div>
-                        <div class = "col-xs-12 col-sm-8 col-md-8 col-lg-9">
-
-                            <div class = "teammate pad-l">
-                                <div class = "title">
-                                    <span class = "title">Victor Rosales</span>
-                                    <a href = "https://www.linkedin.com/in/victor-hugo-rosales-393010b/">
-                      <span class = "fa-stack fa-md pull-right">
-                        <i class = "fa fa-square fa-stack-2x"></i>
-                        <i class = "fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                                    </a>
-                                </div>
-                                <div class = "description">
-                                    <p data-t>
-                                        Free software lover, Victor has worked several years as a High Performance
-                                        Computing Engineer, full-stack developer and DevOps Engineer. Passionate about
-                                        new technologies and anything GNU/Linux related // Amante del c&oacute;digo
-                                        libre,
-                                        Victor ha trabajado varios a&ntilde;os como Ingeniero de Computadoras de alto
-                                        Rendimiento,
-                                        desarrollador e Ingeniero DevOps.
-                                        Apasionado sobre nuevas tecnolog&iacute;as y todo lo relacionado con GNU/Linux
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "box-team">
-                        <div class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                            <img src = "img/team/ale.jpeg"
-                                 alt = ""
-                                 class = "img-responsive" />
-                        </div>
-                        <div class = "col-xs-12 col-sm-8 col-md-8 col-lg-9">
-
-                            <div class = "teammate pad-l">
-                                <div class = "title">
-                                    <span class = "title">Alejandro Paredes</span>
-                                    <a href = "https://www.linkedin.com/in/alejandroparedes/">
-                      <span class = "fa-stack fa-md pull-right">
-                        <i class = "fa fa-square fa-stack-2x"></i>
-                        <i class = "fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                                    </a>
-                                </div>
-                                <div class = "description">
-                                    <p data-t>
-                                        Electronics Engineer with more than 8 years of experience in software development as
-                                        full-stack developer and scrum master. Pragmatic, enthusiastic, empathic and
-                                        motivational team leader, who enjoys organizing projects to deliver valuable outputs on
-                                        time. His greatest satisfaction is to make things happen // Ingeniero Electr&oacute;nico
-                                        con m&aacute;s de 8 a&ntilde;os de experiencia en la construcci&oacute;n de software
-                                        como desarrollador full-stack y scrum master. Alejandro es un l&iacute;der de equipo
-                                        pragm&aacute;tico, entusiasta, emp&aacute;tico y motivador, que disfruta
-                                        organizar los proyectos para entregar resultados valiosos a tiempo. Su mayor satisfacci&oacute;n
-                                        es hacer que las cosas sucedan
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-
-        <!-- Contact -->
-        <section id = "contact"
-                 class = "home-section bg-brand">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-md-offset-2 col-md-8">
-                        <div class = "section-heading">
-                            <h2 data-t>Contact us // Contactenos</h2>
-                            <p data-t>Contact us using the form below and we will get in touch // Env&iacute;enos sus
-                                      datos y
-                                      nosotros nos pondremos en contacto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "row">
-                    <div class = "col-md-offset-2 col-md-8">
-                        <div style = "display:none;"
-                             id = "email-invalid"></div>
-                        <div style = "display:none;"
-                             id = "thankyou_message">
-                            <h2 data-t>
-                                <em>Thanks! // Gracias</em><br>
-                                Your message has been sent // Su mensage ha sido enviado
-                            </h2>
-                        </div>
-                        <div id = "errormessage"></div>
-                        <form id = "gform"
-                              action = "https://script.google.com/macros/s/AKfycbzH-tsrur43R4hFxy6f21q-YyoFKcY4aPa8_iVlUBZuAYrweRc/exec"
-                              method = "post"
-                              role = "form"
-                              class = "contactForm">
-                            <div class = "form-group">
-                                <input type = "text"
-                                       name = "name"
-                                       class = "form-control"
-                                       id = "name"
-                                       placeholder = "Your Name"
-                                       data-rule = "minlen:4"
-                                       data-msg = "Please enter at least 4 chars" />
-                                <div class = "validation"></div>
-                            </div>
-                            <div class = "form-group">
-                                <input type = "email"
-                                       class = "form-control"
-                                       name = "email"
-                                       id = "email"
-                                       placeholder = "Your Email"
-                                       data-rule = "email"
-                                       data-msg = "Please enter a valid email" />
-                                <div class = "validation"></div>
-                            </div>
-                            <div class = "form-group">
-                                <input type = "text"
-                                       class = "form-control"
-                                       name = "subject"
-                                       id = "subject"
-                                       placeholder = "Subject"
-                                       data-rule = "minlen:4"
-                                       data-msg = "Please enter at least 8 chars of subject" />
-                                <div class = "validation"></div>
-                            </div>
-                            <div class = "form-group">
-                  <textarea class = "form-control"
-                            name = "message"
-                            rows = "5"
-                            data-rule = "required"
-                            data-msg = "Please write something for us"
-                            placeholder = "Message"></textarea>
-                                <div class = "validation"></div>
-                            </div>
-                            <div class = "text-center">
-                                <button type = "submit"
-                                        class = "btn btn-theme btn-lg btn-block"
-                                        data-t>Send Message // Enviar
-                                </button>
-                                <div style = "display: none;"
-                                     id = "spin">
-                                    <i class = "fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                                    <span class = "sr-only"
-                                          data-t>Loading... // Cargando...</span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-                <!-- Social -->
-
-            </div>
-
-            </div>
-        </section>
-
-        <footer>
-            <div class = "container">
-                <div class = "row wow fadeIn">
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
-                        <div>
-                            <div>
-                                <ul class = "social-network">
-                                    <li><a href = "https://www.linkedin.com/company-beta/16247820/">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-linkedin fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                                    </li>
-                                    <li><a href = "https://github.com/codetronicsio">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-github fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                                    </li>
-                                    <li><a href = "https://www.instagram.com/codetronics/">
-                <span class = "fa-stack fa-2x">
-                  <i class = "fa fa-circle fa-stack-2x"></i>
-                  <i class = "fa fa-instagram fa-stack-1x social-icons-text-color"></i>
-                </span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p></p>
-                                <p>Nazaret 3176 #15</p>
-                                <p>C&oacute;rdoba - Argentina</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class = "col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
-                        <div class = "service-box">
-                            <div class = "map"
-                                 id = "map">
-
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <i class="color-dark fa fa-gears fa-4x"></i>
+                    <h4 data-t>Develop new tools
+                        for your company // Desarrollamos nuevas herramientas para su empresa</h4>
+                    <p data-t>We work closely to you to build that tool you need, and
+                        integrate it
+                        into your
+                        existing environment // Trabajamos junto a uster para construir la herramienta que
+                        necesita e integrarla con sus procesos existentes</p>
                 </div>
             </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <i class=" color-dark fa fa-bolt fa-4x"></i>
+                    <h4 data-t>Power-up your local team // Reforzamos su equipo actual</h4>
+                    <p data-t>We can add experience and skill to your team, to give you the extra edge you need
+                        // Podemos agregar experiencia y nuevas habilidades a su equipo para darte el
+                        impulso extra que necesitas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Technologies ------------------------->
+<section id="technologies"
+         class="home-section bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="section-heading">
+                    <h2 data-t>The technologies we use // Las tecnolog&iacute;as que usamos</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <section class="customer-logos slider">
+                <div class="slide"><img src="./img/techs/angular.png"></div>
+                <div class="slide"><img src="./img/techs/mongo.png"></div>
+                <div class="slide"><img src="./img/techs/sails.png"></div>
+                <div class="slide"><img src="./img/techs/cordova.png"></div>
+                <div class="slide"><img src="./img/techs/aws.png"></div>
+                <div class="slide"><img src="./img/techs/docker.png"></div>
+                <div class="slide"><img src="./img/techs/react.png"></div>
+                <div class="slide"><img src="./img/techs/python.png"></div>
+                <div class="slide"><img src="./img/techs/node.png"></div>
+                <div class="slide"><img src="./img/techs/go.png"></div>
+                <div class="slide"><img src="./img/techs/ionic.png"></div>
+                <div class="slide"><img src="./img/techs/java.png"></div>
+                <div class="slide"><img src="./img/techs/kubernetes.png"></div>
+                <div class="slide"><img src="./img/techs/linux.png"></div>
+                <div class="slide"><img src="./img/techs/os.png"></div>
+                <div class="slide"><img src="./img/techs/html.png"></div>
+                <div class="slide"><img src="./img/techs/css.png"></div>
+                <div class="slide"><img src="./img/techs/wp.png"></div>
+                <div class="slide"><img src="./img/techs/ffmpeg.png"></div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Works ------------------------->
+<section id="works" class="timeline home-section bg-dark">
+    <div class="container color-light">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="section-heading">
+                    <h2 data-t> Works // Trabajos Realizados</h2>
+                    <p data-t>A brief description of our projects log // Un resumen de nuestros proyectos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>
             <div>
-                <p>Codetronics 2017</p>
+                <time>2013</time>
+                <p data-t>Full-stack web app development to store and process lottery data // Desarrollo de una
+                    aplicaci&oacuten web para el almacenamiento y
+                    procesamiento de los resultados
+                    de la
+                    loter&iacutea</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2015</time>
+                <p data-t>Hired by an EEUU startup as the main development team. Worked on a mobile-first web app for
+                    IOS and Android for tracking health treatments of patients with chronic illnesses // Contrato con
+                    una startup de EEUU para ser
+                    su principal equipo de desarrollo. Se implement&oacute la primer versi&oacuten de una
+                    aplicaci&oacuten m&oacutevil para IOS
+                    y Android la cual permite realizar el seguimiento de tratamientos de enfermedades cr&oacutenicas de
+                    pacientes</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2015</time>
+                <p data-t>Javascript UI upgrade project for an EEUU based robotics company. Working to improve an
+                    existing robot-human mobile interface with new functionalities and
+                    look & feel // Actualizaci&oacuten de la interfaz de usuario de un producto de
+                    importante empresa de rob&oacutetica de EEUU</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2015</time>
+                <p data-t>Workforce augmentation of a Canadian based robotics company. Worked together with the remote
+                    team on the development of a web app interface to control large-scale robot fleets // Aumento del
+                    equipo de una empresa de rob&oacutetica Canadiense, se trabaj&oacute en una interfaz
+                    de control de robots
+                </p>
 
             </div>
-        </footer>
+        </li>
+        <li>
+            <div>
+                <time>2016</time>
+                <p data-t>In charge of the post-mortem analysis of a commerce promotions hybrid app for an Argentinean
+                    company. An undocumented, non-functional and broken product was cleaned up, organized and fixed into
+                    a new MVP to be showcased for potential investors // Encargados del an&aacutelisis
+                    post-mortem de una aplicaci&oacuten
+                    h&iacutebrida de
+                    promociones comerciales para una empresa argentina. Se tom&oacute un producto indocumentado, no
+                    funcional
+                    y roto. Fue ordenado y corregido para ser nuevamente presentado a inversionistas</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2016</time>
+                <p data-t>Development of a multi platform tool for a local software company. Analysis, design and
+                    implementation and testing of a system for real-time audio and video recording and streaming from
+                    different devices. This tool provides a control and status api and is meant to be used by one of the
+                    major cellular network providers of south america // An&aacutelisis, diseño, desarrollo y testeo de
+                    una
+                    herramienta para Linux y Windows para una empresa local de software. Mediante ella, se puede
+                    realizar la grabaci&oacuten y transmisi&oacuten en tiempo real de audio y video de un dispositivo.
+                    Provee
+                    interfaces de control y de chequeo de estado. Esta herramienta ser&aacute usada por una de los
+                    proveedores
+                    de telefon&iacutea m&oacutevil m&aacutes grandes de Sudam&eacuterica</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2017</time>
+                <p data-t>Development of the front-end of medical products for an argentinean software company
+                    in their latests mobile stages. A mobile hybrid app for IOS and Android designed for tracking
+                    medical history, administer and track progress of health treatments. This app is a modular product
+                    designed to be easily expanded includes an integrated chat to communicate professionals with
+                    patients, and interacts with several medical measure devices using third-party apis // Desarrollo de
+                    la interfaz de usuario de productos de una empresa local de software m&eacutedico. Se
+                    construy&oacute una aplicaci&oacuten
+                    h&iacutebrida para IOS y
+                    Android la cual permite el seguimiento y control de tratamientos m&eacutedicos. Dispone de un chat
+                    para la
+                    efectiva comunicaci&oacuten entre pacientes y los distintos profesionales de la salud y distintas
+                    interfaces para obtener datos de equipos m&eacutedicos de terceros</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2017</time>
+                <p data-t>Technology upgrade project for an EEUU based robotics company. Migration of the existing
+                    robot-human mobile and web interface to Facebook React // Actualizaci&oacuten de las
+                    tecnolog&iacuteas usadas en un proyecto de rob&oacutetica de EEUU. Se
+                    migr&oacute la interfaz
+                    de usuario web y m&oacutevil existente a Facebook React</p>
+            </div>
+        </li>
 
-        <!-- js -->
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
-                crossorigin = "anonymous"></script>
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src = "js/custom.js"></script>
-        <script data-cfasync = "false"
-                type = "text/javascript"
-                src = "js/form-submission-handler.js"></script>
-        <script src = "js/dom-i18n.min.js"></script>
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    </ul>
+</section>
+
+<!------------------------- Spacer 1 ------------------------->
+<section id="spacer1"
+         class="home-section spacer">
+    <div class="container mar-top40 mar-bottom40">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="color-light">
+                    <h4 data-t>We create full-range technology solutions to expand your business or ignite new
+                        ones // Creamos un amplio rango de recursos tecnol&oacute;gicos para expandir su
+                        negocio
+                        o para que genere nuevas oportunidades de crecimiento</h4>
+                    <h4 data-t>From hardware electronics to software user interfaces // Desde la electr&oacute;nica
+                        del
+                        hardware hasta las interfaces de usuario </h4>
+                    <p class="lead"
+                       data-t>We develop your vision from scratch // Desarrollamos su visi&oacute;n desde
+                        cero </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Clients ------------------------->
+<section id="clients"
+         class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="section-heading">
+                    <h2 data-t>These companies have trusted in our work // Estas empresas han
+                        confiado en nuestro trabajo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeIn">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <a href="http://www.esolutions.com.ar/">
+                        <img class="clientLogo"
+                             src="img/works/thumbs/eSolutions.jpg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <a href="http://www.ekumenlabs.com/">
+                        <img class="clientLogo"
+                             src="img/works/thumbs/ekumen.jpg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <a href="">
+                        <img class="clientLogo"
+                             src="img/works/thumbs/escom.jpg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
+                <div class="service-box">
+                    <a href="https://www.lammovil.com/">
+                        <img class="clientLogo"
+                             src="img/works/thumbs/lammovil.jpg"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
-    </body>
+        <!--a href="./Dossier/Codetronics_Dossier_English_Espanol.pdf"
+           class="btn btn-warning btn-sm"
+           style="margin-top: 50px"
+           role="button"
+           data-t>Download projects details // Descargar detalles de proyectos</a-->
+    </div>
 
-    <script>
-        reorder();
+</section>
 
-        function reorder() {
-            var grp = $(".sort-team").children();
-            var cnt = grp.length;
+<!------------------------- Spacer 2 ------------------------->
+<section id="spacer2"
+         class="home-section spacer">
+    <div class="container mar-top40 mar-bottom40">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="color-light">
+                    <h4 data-t>Working software is our principal measurement of progress // El software
+                        funcionando
+                        es nuestra medida de progreso</h4>
+                    <p class="lead"
+                       data-t>We deliver early and continuously valuable software // Entrega temprana y continua
+                        de software que agregue valor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Team ------------------------->
+<section id="team"
+         class="home-section bg-gray wow fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="section-heading">
+                    <h2 data-t>Meet the core team // Conozca al equipo principal</h2>
+                    <!-- <p class="special-p">We're a team of goal driven people that want you to ignite and power your business with software seamlessly</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="sort-team col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="box-team">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <img src="img/team/luis.jpeg"
+                         alt=""
+                         class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                    <div class="teammate pad-l">
+                        <div class="title">
+                            <span class="title">Luis Bosch</span>
+                            <a href="https://www.linkedin.com/in/luis-bosch-3a60b31a/">
+                      <span class="fa-stack fa-md pull-right">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <p data-t>
+                                Luis is an Electronics Engineer from the Catholic University of Cordoba (UCC),
+                                graduated in 2009. He's always had a knack for computers, which led him to get
+                                involved in projects involving technology, both hardware and software,
+                                and choose the path that he did.
+                                His latest projects have involved full stack development of web applications for
+                                real-time data processing. In his free time, he enjoys practicing and teaching
+                                Taekwon-Do and jamming with his metal band // Luis es Ingeniero Electr&oacute;nico
+                                graduado en la Universidad Cat&oacute;lica de C&oacute;rdoba. Siempre ha tenido
+                                intuici&oacute;n
+                                natural y habilidad para las computadoras, siempre se ha involucrado en
+                                proyectos relacionados con la tecnolog&iacute;a, tanto de hardware como de
+                                software.
+                                Sus &uacute;ltimos proyectos fueron aplicaciones web para el procesamiento de
+                                datos en
+                                tiempo real. En su tiempo libre, le gusta practicar y ense&ntilde;ar Taekwon-Do
+                                y tocar
+                                con su banda de metal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-team">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <img src="img/team/san.jpeg"
+                         alt=""
+                         class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                    <div class="teammate pad-l">
+                        <div class="title">
+                            <span class="title">Santiago Avalos</span>
+                            <a href="https://www.linkedin.com/in/santiago-avalos-ambroggio-998966143/">
+                                <span class="fa-stack fa-md pull-right">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <p data-t>
+                                Santiago discovered programming while making small computer games with some of
+                                his
+                                high-school friends. He graduated from the National University of Cordoba,
+                                with a CS major degree, specializing on IA research.
+                                He started working on local start-ups as Game Designer and C++ Developer,
+                                before moving to Codetronics, where he focuses on web and hybrid mobile
+                                applications // Santiago descubri&oacute; la programaci&oacute;n mientras hac&iacute;a
+                                juegos de
+                                computadora con sus amigos de la secundaria. Se gradu&oacute; de la Universidad
+                                Nacional de C&oacute;rdoba, con un t&iacute;tulo de Licenciado en Ciencias de la
+                                Computaci&oacute;n,
+                                especializado en investigaci&oacute;n de IA. Comenz&oacute; a trabajar en
+                                startups locales
+                                como Game Designer y programador C++ antes de trasladarse a Codetronics, donde
+                                se focaliza en el desarrollo de aplicaciones m&oacute;viles h&iacute;bridas.
+                                Adem&aacute;s de la
+                                programaci&oacute;n, la m&uacute;sica es su pasi&oacute;n
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-team">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <img src="img/team/vic.jpeg"
+                         alt=""
+                         class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+
+                    <div class="teammate pad-l">
+                        <div class="title">
+                            <span class="title">Victor Rosales</span>
+                            <a href="https://www.linkedin.com/in/victor-hugo-rosales-393010b/">
+                      <span class="fa-stack fa-md pull-right">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <p data-t>
+                                Free software lover, Victor has worked several years as a High Performance
+                                Computing Engineer, full-stack developer and DevOps Engineer. Passionate about
+                                new technologies and anything GNU/Linux related // Amante del c&oacute;digo
+                                libre,
+                                Victor ha trabajado varios a&ntilde;os como Ingeniero de Computadoras de alto
+                                Rendimiento,
+                                desarrollador e Ingeniero DevOps.
+                                Apasionado sobre nuevas tecnolog&iacute;as y todo lo relacionado con GNU/Linux
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-team">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <img src="img/team/ale.jpeg"
+                         alt=""
+                         class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+
+                    <div class="teammate pad-l">
+                        <div class="title">
+                            <span class="title">Alejandro Paredes</span>
+                            <a href="https://www.linkedin.com/in/alejandroparedes/">
+                      <span class="fa-stack fa-md pull-right">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <p data-t>
+                                Electronics Engineer with more than 8 years of experience in software development as
+                                full-stack developer and scrum master. Pragmatic, enthusiastic, empathic and
+                                motivational team leader, who enjoys organizing projects to deliver valuable outputs on
+                                time. His greatest satisfaction is to make things happen // Ingeniero Electr&oacute;nico
+                                con m&aacute;s de 8 a&ntilde;os de experiencia en la construcci&oacute;n de software
+                                como desarrollador full-stack y scrum master. Alejandro es un l&iacute;der de equipo
+                                pragm&aacute;tico, entusiasta, emp&aacute;tico y motivador, que disfruta
+                                organizar los proyectos para entregar resultados valiosos a tiempo. Su mayor satisfacci&oacute;n
+                                es hacer que las cosas sucedan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!------------------------- Contact ------------------------->
+<section id="contact"
+         class="home-section bg-brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="section-heading">
+                    <h2 data-t>Contact us // Contactenos</h2>
+                    <p data-t>Contact us using the form below and we will get in touch // Env&iacute;enos sus
+                        datos y
+                        nosotros nos pondremos en contacto</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div style="display:none;"
+                     id="email-invalid"></div>
+                <div style="display:none;"
+                     id="thankyou_message">
+                    <h2 data-t>
+                        <em>Thanks! // Gracias</em><br>
+                        Your message has been sent // Su mensage ha sido enviado
+                    </h2>
+                </div>
+                <div id="errormessage"></div>
+                <form id="gform"
+                      action="https://script.google.com/macros/s/AKfycbzH-tsrur43R4hFxy6f21q-YyoFKcY4aPa8_iVlUBZuAYrweRc/exec"
+                      method="post"
+                      role="form"
+                      class="contactForm">
+                    <div class="form-group">
+                        <input type="text"
+                               name="name"
+                               class="form-control"
+                               id="name"
+                               placeholder="Your Name"
+                               data-rule="minlen:4"
+                               data-msg="Please enter at least 4 chars"/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email"
+                               class="form-control"
+                               name="email"
+                               id="email"
+                               placeholder="Your Email"
+                               data-rule="email"
+                               data-msg="Please enter a valid email"/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text"
+                               class="form-control"
+                               name="subject"
+                               id="subject"
+                               placeholder="Subject"
+                               data-rule="minlen:4"
+                               data-msg="Please enter at least 8 chars of subject"/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                  <textarea class="form-control"
+                            name="message"
+                            rows="5"
+                            data-rule="required"
+                            data-msg="Please write something for us"
+                            placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                                class="btn btn-theme btn-lg btn-block"
+                                data-t>Send Message // Enviar
+                        </button>
+                        <div style="display: none;"
+                             id="spin">
+                            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                            <span class="sr-only"
+                                  data-t>Loading... // Cargando...</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 
-            var temp, x;
-            for (var i = 0; i < cnt; i++) {
-                temp = grp[i];
-                x = Math.floor(Math.random() * cnt);
-                grp[i] = grp[x];
-                grp[x] = temp;
-            }
-            $(grp).remove();
-            $(".sort-team").append($(grp));
+        <!-- Social -->
+
+    </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row wow fadeIn">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
+                <div>
+                    <div>
+                        <ul class="social-network">
+                            <li><a href="https://www.linkedin.com/company-beta/16247820/">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                            </li>
+                            <li><a href="https://github.com/codetronicsio">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/codetronics/">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x social-icons-text-color"></i>
+                </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p>Nazaret 3176 #15</p>
+                        <p>C&oacute;rdoba - Argentina</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-6">
+                <div class="service-box">
+                    <div class="map"
+                         id="map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>Codetronics 2017</p>
+
+    </div>
+</footer>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script data-cfasync="false"
+        type="text/javascript"
+        src="js/form-submission-handler.js"></script>
+<script src="js/dom-i18n.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+</body>
+
+<script>
+    reorder();
+
+    function reorder() {
+        var grp = $(".sort-team").children();
+        var cnt = grp.length;
+
+
+        var temp, x;
+        for (var i = 0; i < cnt; i++) {
+            temp = grp[i];
+            x = Math.floor(Math.random() * cnt);
+            grp[i] = grp[x];
+            grp[x] = temp;
+        }
+        $(grp).remove();
+        $(".sort-team").append($(grp));
+    }
+
+    function collapseMenu() {
+        if ($('#menu-button').is(':visible')) {
+            $('#bs-example-navbar-collapse-1').collapse('toggle');
+        }
+    }
+
+
+    (function () {
+
+        'use strict';
+
+        var items = document.querySelectorAll(".timeline li");
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
         }
 
-        function collapseMenu() {
-            if ($('#menu-button').is(':visible')) {
-                $('#bs-example-navbar-collapse-1').collapse('toggle');
-            }
-        }
-
-
-        var i18n = window.domI18n({
-            selector: '[data-t]',
-            separator: ' // ',
-            languages: ['en-US', 'es'],
-            defaultLanguage: 'en-US'
-        });
-
-        var enButton = document.getElementById('en-btn');
-        var esButton = document.getElementById('es-btn');
-
-        i18n.changeLanguage('en-US');
-        enButton.setAttribute("style", "color: #FFAE00;");
-
-        enButton.onclick = function() {
-            enButton.setAttribute("style", "color: #FFAE00;");
-            esButton.setAttribute("style", "");
-            i18n.changeLanguage('en-US');
-        };
-        esButton.onclick = function() {
-            esButton.setAttribute("style", "color: #FFAE00;");
-            enButton.setAttribute("style", "");
-            i18n.changeLanguage('es');
-        };
-
-        document.body.style.display = 'block';
-
-        function initMap() {
-            var codetronics = {lng: -64.2254871, lat: -31.3917074};
-            var center = {lng: -64.196234, lat: -31.410942};
-            var styledMapType = new google.maps.StyledMapType(
-                    [
-                        {
-                            "featureType": "all",
-                            "elementType": "labels",
-                            "stylers": [
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "all",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "saturation": 36
-                                },
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 40
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "all",
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                                {
-                                    "visibility": "on"
-                                },
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 16
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "all",
-                            "elementType": "labels.icon",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative.locality",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "color": "#c4c4c4"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative.neighborhood",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "color": "#707070"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "landscape",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 21
-                                },
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi.business",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                                {
-                                    "color": "#be2026"
-                                },
-                                {
-                                    "lightness": "0"
-                                },
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                },
-                                {
-                                    "hue": "#ff000a"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 18
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                                {
-                                    "color": "#FFAE00"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "color": "#ffffff"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                                {
-                                    "color": "#2c2c2c"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.local",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 16
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.local",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                                {
-                                    "color": "#999999"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.local",
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                                {
-                                    "saturation": "-52"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "transit",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 19
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "color": "#2B2B2B"
-                                },
-                                {
-                                    "lightness": 17
-                                }
-                            ]
-                        }
-                    ],
-                    {name: 'Styled Map'});
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: codetronics,
-                mapTypeControlOptions: {
-                    mapTypeIds: []
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
                 }
-            });
-
-            map.mapTypes.set('styled_map', styledMapType);
-            map.setMapTypeId('styled_map');
-            var marker = new google.maps.Marker({
-                position: codetronics,
-                map: map
-            });
+            }
         }
 
-    </script>
-    <script async
-            defer
-            src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDTmEEuplu7PLULgmztPBemcouftA3il6I&callback=initMap">
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
 
-    </script>
+    })();
 
-    <script>
-        $(document).ready(function() {
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 700,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 5
+    var i18n = window.domI18n({
+        selector: '[data-t]',
+        separator: ' // ',
+        languages: ['en-US', 'es'],
+        defaultLanguage: 'en-US'
+    });
+
+    var enButton = document.getElementById('en-btn');
+    var esButton = document.getElementById('es-btn');
+
+    i18n.changeLanguage('en-US');
+    enButton.setAttribute("style", "color: #FFAE00;");
+
+    enButton.onclick = function () {
+        enButton.setAttribute("style", "color: #FFAE00;");
+        esButton.setAttribute("style", "");
+        i18n.changeLanguage('en-US');
+    };
+    esButton.onclick = function () {
+        esButton.setAttribute("style", "color: #FFAE00;");
+        enButton.setAttribute("style", "");
+        i18n.changeLanguage('es');
+    };
+
+    document.body.style.display = 'block';
+
+    function initMap() {
+        var codetronics = {lng: -64.2254871, lat: -31.3917074};
+        var center = {lng: -64.196234, lat: -31.410942};
+        var styledMapType = new google.maps.StyledMapType(
+                [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#c4c4c4"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#707070"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 21
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#be2026"
+                            },
+                            {
+                                "lightness": "0"
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            },
+                            {
+                                "hue": "#ff000a"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#FFAE00"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#2c2c2c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#999999"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "saturation": "-52"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2B2B2B"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
                     }
-                }, {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                }, {
-                    breakpoint: 300,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }]
-            });
+                ],
+                {name: 'Styled Map'});
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: codetronics,
+            mapTypeControlOptions: {
+                mapTypeIds: []
+            }
         });
-    </script>
+
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+        var marker = new google.maps.Marker({
+            position: codetronics,
+            map: map
+        });
+    }
+
+</script>
+<script async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTmEEuplu7PLULgmztPBemcouftA3il6I&callback=initMap">
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 250,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 5
+                }
+            }, {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 300,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    });
+</script>
 
 
 </html>
