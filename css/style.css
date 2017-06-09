@@ -231,8 +231,8 @@ Spacer
 ============================= */
 
 #spacer1 {
-    background-image: url(../img/spacer/chip.jpg);
-    background-position-y: 50%;
+    background-image: url(../img/spacer/pcb.jpg);
+    background-position-y: 65%;
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
@@ -331,6 +331,7 @@ About
     font-size: 1.2em;
     flex-direction: row;
     text-align: left;
+    color: #fff;
 }
 
 .teammate .description {
