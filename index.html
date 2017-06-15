@@ -511,9 +511,10 @@
 
             <div class="box-team">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                    <img src="img/team/luis.jpeg"
+                    <img src="img/team/luis.jpg"
                          alt=""
-                         class="img-responsive"/>
+                         class="img-responsive"
+                         onmouseover="hover(this, 'img/team/luis.gif');" onmouseout="unhover(this, 'img/team/luis.jpg');"/>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
                     <div class="teammate pad-l">
@@ -548,9 +549,10 @@
 
             <div class="box-team">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                    <img src="img/team/san.jpeg"
+                    <img src="img/team/san.jpg"
                          alt=""
-                         class="img-responsive"/>
+                         class="img-responsive"
+                         onmouseover="hover(this, 'img/team/san.gif');" onmouseout="unhover(this, 'img/team/san.jpg');"/>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
                     <div class="teammate pad-l">
@@ -565,9 +567,9 @@
                         </div>
                         <div class="description">
                             <p data-t>
-                                Degree in Computer Science. He discovered programming while playing and creating small
+                                Major in Computer Science. He discovered programming while playing and creating small
                                 computer games with his friends. Specialized on AI research. He started his career in
-                                local startups as a video game designer and C++ programmer. At Codetronics, he is
+                                local startups as a Game Designer and C++ programmer. At Codetronics, he is
                                 focused on the development of hybrid mobile applications.
                                 Programming and music are his passions.
                                 // Licenciado en Ciencias de la Computaci&oacuten. Descubri&oacute la
@@ -587,9 +589,10 @@
 
             <div class="box-team">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                    <img src="img/team/vic.jpeg"
+                    <img src="img/team/vic.jpg"
                          alt=""
-                         class="img-responsive"/>
+                         class="img-responsive"
+                         onmouseover="hover(this, 'img/team/vic.gif');" onmouseout="unhover(this, 'img/team/vic.jpg');"/>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
 
@@ -620,9 +623,10 @@
 
             <div class="box-team">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                    <img src="img/team/ale.jpeg"
+                    <img src="img/team/ale.jpg"
                          alt=""
-                         class="img-responsive"/>
+                         class="img-responsive"
+                         onmouseover="hover(this, 'img/team/ale.gif');" onmouseout="unhover(this, 'img/team/ale.jpg');"/>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
 
@@ -630,10 +634,10 @@
                         <div class="title">
                             <span class="title">Alejandro Paredes</span>
                             <a href="https://www.linkedin.com/in/alejandroparedes/">
-                      <span class="fa-stack fa-md pull-right">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
+                            <span class="fa-stack fa-md pull-right">
+                              <i class="fa fa-square fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
                             </a>
                         </div>
                         <div class="description">
@@ -1222,6 +1226,15 @@
             }]
         });
     });
+    
+    function hover(element, file) {
+      element.setAttribute('src', file);
+    };
+
+    function unhover(element, file) {
+      element.setAttribute('src', file);
+    };
+    
 </script>
 
 
