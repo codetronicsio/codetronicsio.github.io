@@ -43,25 +43,6 @@
         ga('create', 'UA-97468758-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = '57P0M';
-        window['_fs_namespace'] = 'FS';
-        (function(m,n,e,t,l,o,g,y){
-            if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
-            g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-            o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-            g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-            g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-                d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-                        ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-        })(window,document,window['_fs_namespace'],'script','user');
-    </script>
-
-
 </head>
 <body>
 
@@ -239,9 +220,11 @@
                     <i class="color-dark fa fa-code fa-4x"></i>
                     <h4 data-t>We create custom software, ready to use // Creamos software personalizado, listo para
                         usar</h4>
-                    <p data-t>From requirements definition and implementation to testing and deployment // Desde
-                        definici&oacuten de requerimientos e
-                        implementaci&oacuten, hasta casos de prueba y puesta en marcha</p>
+                    <p data-t>From your idea to a final product. Be it a website, a mobile application, a controller for
+                        a special machine or an automation script, we can make it happen // Convertimos su idea en un
+                        producto final. Ya sea un sitio web, una aplicaci&oacuten m&oacutevil, un controlador de
+                        m&aacutequinas o un
+                        script de automatizaci&oacuten, podemos hacer que suceda</p>
                 </div>
             </div>
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
@@ -249,10 +232,15 @@
                     <i class="color-dark fa fa-tablet fa-4x"></i><i
                         class="color-dark hpadded fa fa-desktop fa-4x"></i><i
                         class="color-dark fa fa-mobile fa-4x"></i>
-                    <h4 data-t>Connect with your clients // Con&eacutectese con sus clientes</h4>
-                    <p data-t>We can expand your business with multi-platform apps,
-                        reaching a wider audience // Podemos expandir su negocio con aplicaciones multiplataforma
-                        alcanzando una mayor audiencia</p>
+                    <h4 data-t>We extend the limits of software solutions with electronics // Ampliamos los
+                        l&iacutemites de
+                        las soluciones de software con la electr&oacutenica</h4>
+                    <p data-t>Expand your possibilities using sensors, microcontrollers, cameras, domotics, task's
+                        automation, etc. We combine electronics and software to create solutions // Ampl&iacutee sus
+                        posibilidades utilizando sensores, microcontroladores, c&aacutemaras, dom&oacutetica,
+                        automatizaci&oacuten de
+                        tareas, etc. Combinamos la electr&oacutenica y el software en la creaci&oacuten de
+                        soluciones</p>
                 </div>
             </div>
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-3 col-lg-offset-0 col-lg-3">
@@ -269,9 +257,12 @@
                 <div class="service-box">
                     <i class=" color-dark fa fa-bolt fa-4x"></i>
                     <h4 data-t>Power-up your current team // Reforzamos su equipo actual</h4>
-                    <p data-t>We can add experience and new skills to your existing teams for an extra boost // Podemos
+                    <p data-t>We can add experience and new skills to your existing teams for an extra boost of graphic
+                        design, software creation, project management, DevOps and electronics // Podemos
                         agregar experiencia y nuevas habilidades para darle el impulso extra que
-                        necesita</p>
+                        necesita de dise&ntilde;o gr&aacutefico, creacion de software, gesti&oacuten de proyectos,
+                        DevOps
+                        y electr&oacutenica</p>
                 </div>
             </div>
         </div>
@@ -591,8 +582,8 @@
                                 computer games with his friends. Specialized on AI research. He started his career in
                                 local startups as a Game Designer and C++ programmer. At Codetronics, he is
                                 focused on the development of hybrid mobile applications.
-                                Programming and music are his passions.
-                                // Licenciado en Ciencias de la Computaci&oacuten. Descubri&oacute la
+                                Programming and music are his passions. // Licenciado en Ciencias de la
+                                Computaci&oacuten. Descubri&oacute la
                                 programaci&oacuten
                                 mientras hac&iacutea juegos de computadora con sus amigos. Especializado en
                                 investigaci&oacuten de
@@ -703,13 +694,12 @@
 
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <div style="display:none;"
+                <div style="display:block;"
                      id="email-invalid"></div>
                 <div style="display:none;"
                      id="thankyou_message">
                     <h2 data-t>
-                        <em>Thanks! // Gracias</em><br>
-                        Your message has been sent // Su mensage ha sido enviado
+                        Thanks // Gracias
                     </h2>
                 </div>
                 <div id="errormessage"></div>
