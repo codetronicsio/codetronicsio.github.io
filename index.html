@@ -673,6 +673,40 @@
                 </div>
             </div>
 
+            <div class="box-team">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <img src="img/team/fran.jpg"
+                         alt=""
+                         class="fullWidth img-responsive"
+                         onmouseover="hover(this, 'img/team/fran.jpg');"
+                         onmouseout="unhover(this, 'img/team/fran.jpg');"/>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+
+                    <div class="teammate pad-l">
+                        <div class="title">
+                            <span class="title">Francisco Malbran</span>
+                            <a href="https://www.linkedin.com/in/franciscomalbran/">
+                            <span class="fa-stack fa-md pull-right">
+                              <i class="fa fa-square fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <p data-t>
+                                Software Engineer. Enthusiastic, with excellent communications skills and a solid
+                                education. Licenciate in Computer Sciences with more than 10 years of professional
+                                experience and strong technical capabilities. // Ingeniero de Software. Entusiasta, con
+                                excelentes habilidades de comunicaci&oacuten y una s&oacutelida educaci&oacuten.
+                                Licenciado en Ciencias de la Computaci&oacuten con m&aacutes de 10 a&ntilde;os de
+                                experiencia profesional y fuertes capacidades t&eacutecnicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -847,7 +881,7 @@
 
 
         var temp, x;
-        for (var i = 0; i < cnt; i++) {
+        for (var i = 0; i<cnt; i++) {
             temp = grp[i];
             x = Math.floor(Math.random() * cnt);
             grp[i] = grp[x];
@@ -873,15 +907,15 @@
         function isElementInViewport(el) {
             var rect = el.getBoundingClientRect();
             return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    rect.top>=0 &&
+                    rect.left>=0 &&
+                    rect.bottom<=(window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right<=(window.innerWidth || document.documentElement.clientWidth)
             );
         }
 
         function callbackFunc() {
-            for (var i = 0; i < items.length; i++) {
+            for (var i = 0; i<items.length; i++) {
                 if (isElementInViewport(items[i])) {
                     items[i].classList.add("in-view");
                 }
